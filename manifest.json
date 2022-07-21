@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Show/hide details",
+    "version": "0.1",
+    "content_scripts":[
+        {
+            "js":["content.js"],
+            "matches": [
+                "http://stda.minia.edu.eg/*"
+            ]
+        }
+    ],
+    "icons":{
+        "64": "icons/icons8-wolf-64.png"
+    },
+    "background": {
+            "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icons/icons8-wolf-64.png"
+    },
+    "description": "Adds cells with more details of our results (Minya Uni, Engineering Faculty).",
+    "permissions": ["storage", "activeTab","tabs","storage","fontSettings","contentSettings","debugger"]
+}
